@@ -19,7 +19,7 @@ git clone https://github.com/Irian3x3/water.git
 py -3 src/bot.py
 ```
 If it worked it should print the following:  
-[![](https://i.imgur.com/EFLrh8s.png)](#)  
+[![](https://i.imgur.com/EFLrh8s.png)](/#)  
 If not, please create an issue.
 
 ### Info on running your own instance:
