@@ -22,8 +22,8 @@ class Water(commands.Bot):
 
     async def on_ready(self):
         this = self
-        activity = Activity(type=ActivityType.watching, name='you hydrate')
-        await this.change_presence(activity=activity)
+        activity = Activity(type = ActivityType.watching, name = config.status_text)
+        await this.change_presence(activity = activity)
         print('{} is online'.format(this.user.name))
 
     def start_cogs(self):
