@@ -25,3 +25,11 @@ class Water(commands.Bot):
         activity = Activity(type=ActivityType.watching, name='you hydrate')
         await this.change_presence(activity=activity)
         print('{} is online'.format(this.user.name))
+
+    def start_cogs(self):
+        """starts the cogs"""
+        from os import listdir
+
+        for filename in listdir('./src/cogs'):
+            if filename.endswith('.py') and filename != '__init__.py':
+                self.load_extension(f'cogs.{filename[:-3]}')
